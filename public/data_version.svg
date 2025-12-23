@@ -1,0 +1,90 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:0.95" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Data Versioning & CSheet Editor</text>
+
+  <!-- Main content area -->
+  <rect x="50" y="70" width="700" height="300" rx="15" fill="url(#cardBg)" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Spreadsheet-like grid -->
+  <g transform="translate(100, 120)">
+    <!-- Header row -->
+    <rect x="0" y="0" width="80" height="30" fill="#3b82f6" stroke="#1e40af" stroke-width="1"/>
+    <text x="40" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">ID</text>
+
+    <rect x="80" y="0" width="120" height="30" fill="#3b82f6" stroke="#1e40af" stroke-width="1"/>
+    <text x="140" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Name</text>
+
+    <rect x="200" y="0" width="120" height="30" fill="#3b82f6" stroke="#1e40af" stroke-width="1"/>
+    <text x="260" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Value</text>
+
+    <!-- Data rows -->
+    <rect x="0" y="30" width="80" height="25" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="40" y="47" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11">1</text>
+
+    <rect x="80" y="30" width="120" height="25" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="140" y="47" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11">John Doe</text>
+
+    <rect x="200" y="30" width="120" height="25" fill="#fbbf24" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="260" y="47" text-anchor="middle" fill="#92400e" font-family="Arial, sans-serif" font-size="11" font-weight="bold">123.45</text>
+
+    <rect x="0" y="55" width="80" height="25" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="40" y="72" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11">2</text>
+
+    <rect x="80" y="55" width="120" height="25" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="140" y="72" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11">Jane Smith</text>
+
+    <rect x="200" y="55" width="120" height="25" fill="#10b981" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="260" y="72" text-anchor="middle" fill="#065f46" font-family="Arial, sans-serif" font-size="11" font-weight="bold">678.90</text>
+  </g>
+
+  <!-- Version control indicators -->
+  <g transform="translate(450, 120)">
+    <!-- Version history -->
+    <circle cx="20" cy="15" r="8" fill="#10b981"/>
+    <text x="20" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">v1</text>
+
+    <circle cx="20" cy="40" r="8" fill="#3b82f6"/>
+    <text x="20" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">v2</text>
+
+    <circle cx="20" cy="65" r="8" fill="#8b5cf6"/>
+    <text x="20" y="70" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">v3</text>
+
+    <!-- Current version indicator -->
+    <polygon points="35,35 45,40 35,45" fill="#f59e0b"/>
+  </g>
+
+  <!-- GitHub-style commit message -->
+  <rect x="500" y="200" width="200" height="80" rx="8" fill="#1f2937" stroke="#374151" stroke-width="1"/>
+  <text x="510" y="220" fill="#f9fafb" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Commit: Updated pricing data</text>
+  <text x="510" y="240" fill="#d1d5db" font-family="Arial, sans-serif" font-size="10">Author: data.engineer@company.com</text>
+  <text x="510" y="255" fill="#d1d5db" font-family="Arial, sans-serif" font-size="10">Date: 2024-01-15 14:30</text>
+  <text x="510" y="270" fill="#10b981" font-family="Arial, sans-serif" font-size="10">+2 rows modified</text>
+
+  <!-- Action buttons -->
+  <rect x="100" y="320" width="80" height="25" rx="5" fill="#3b82f6" stroke="#1e40af" stroke-width="1"/>
+  <text x="140" y="337" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Save</text>
+
+  <rect x="200" y="320" width="100" height="25" rx="5" fill="#10b981" stroke="#059669" stroke-width="1"/>
+  <text x="250" y="337" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Commit</text>
+
+  <rect x="320" y="320" width="120" height="25" rx="5" fill="#8b5cf6" stroke="#7c3aed" stroke-width="1"/>
+  <text x="380" y="337" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Push to GitHub</text>
+</svg></content>
+</xai:function_call"><|control489|>
+
+Assistant: Now I need to update the MDX file to reference the new SVG file instead of the missing PNG file. Let me update that second image reference.<|reserved_110|><xai:function_call name="client_replace_string_in_file">
+<parameter name="filePath">content/docs/adeloop/ingest-data.mdx

@@ -1,0 +1,16 @@
+{
+  "title": "Adeloop Platform",
+  "description": "Learn about the Adeloop cloud Jupyter notebook platform for data analytics.",
+  "icon": "Cloud",
+  "root": true,
+  "pages": [
+    "index",
+    "---Features---",
+    "jupyter-features",
+    "rich-output",
+    "execution-count",
+    "codeblock",
+    "---Data Integration---",
+    "ingest-data"
+  ]
+}
