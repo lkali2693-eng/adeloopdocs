@@ -71,7 +71,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="relative w-full overflow-hidden min-h-screen flex flex-col bg-transparent text-white selection:bg-green-500/30">
+    <div className="relative w-full overflow-hidden min-h-screen flex flex-col bg-transparent text-foreground dark:text-white selection:bg-green-500/30">
       {/* Background Layer */}
       <HexBackground />
 
@@ -94,14 +94,14 @@ export default function LandingPage() {
                 v2.0 is now live
               </div>
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1]">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground dark:text-white leading-[1.1]">
                 <span className="block animate-fade-up" style={{ animationDelay: '0.1s' }}>Next-Generation</span>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-100 to-green-400 bg-[length:200%_auto] animate-text-shimmer block mt-2 pb-2">
                    Analytics & BI Platform
                 </span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-gray-400 text-pretty leading-relaxed max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '0.2s' }}>
+              <p className="text-xl md:text-2xl text-muted-foreground dark:text-gray-400 text-pretty leading-relaxed max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '0.2s' }}>
                 Adeloop empowers technical and non-technical users to make data-driven decisions. 
                 Move from raw data to actionable insights with our high-performance engine.
               </p>
@@ -115,13 +115,13 @@ export default function LandingPage() {
                 </Link>
                 <Link
                   href="/blog"
-                  className="inline-flex h-14 items-center justify-center rounded-full border border-white/20 bg-white/5 px-10 text-base font-medium text-white shadow-sm transition-all hover:bg-white/10 hover:border-white/30 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
+                  className="inline-flex h-14 items-center justify-center rounded-full border border-white/20 bg-white/5 px-10 text-base font-medium text-foreground dark:text-white shadow-sm transition-all hover:bg-white/10 hover:border-white/30 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
                 >
                   Read Blog
                 </Link>
                 <Link
                   href="mailto:adeleddarai29@gmail.com"
-                  className="inline-flex h-14 items-center justify-center rounded-full border border-white/20 bg-white/5 px-10 text-base font-medium text-white shadow-sm transition-all hover:bg-white/10 hover:border-white/30 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
+                  className="inline-flex h-14 items-center justify-center rounded-full border border-white/20 bg-white/5 px-10 text-base font-medium text-foreground dark:text-white shadow-sm transition-all hover:bg-white/10 hover:border-white/30 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
                 >
                   Contact Sales
                 </Link>
@@ -169,8 +169,8 @@ export default function LandingPage() {
           <FadeIn delay={100} className="h-full">
             <div className="p-10 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-green-500/30 transition-colors group h-full">
               <p className="font-mono text-sm text-green-400 mb-4 tracking-wider uppercase">Explore Features</p>
-              <h2 className="text-3xl font-bold mb-4 text-white group-hover:text-green-400 transition-colors">AdeloopLab Ecosystem</h2>
-              <p className="text-gray-400 mb-8 text-lg leading-relaxed">
+              <h2 className="text-3xl font-bold mb-4 text-foreground dark:text-white group-hover:text-green-400 transition-colors">AdeloopLab Ecosystem</h2>
+              <p className="text-muted-foreground dark:text-gray-400 mb-8 text-lg leading-relaxed">
                 Discover how Adeloop addresses key business challenges. From data integration to real-time insights, 
                 explore our comprehensive suite of tools designed for the modern data stack.
               </p>
@@ -195,8 +195,8 @@ export default function LandingPage() {
                       <PanelsTopLeftIcon className="size-7" />
                   </div>
                   <div>
-                      <h3 className="text-xl font-bold text-white mb-1">Adeloop Platform</h3>
-                      <p className="text-base text-gray-400">Core analytics engine & dashboarding</p>
+                      <h3 className="text-xl font-bold text-foreground dark:text-white mb-1">Adeloop Platform</h3>
+                      <p className="text-base text-muted-foreground dark:text-gray-400">Core analytics engine & dashboarding</p>
                   </div>
                 </div>
                 <ArrowRightIcon className="size-6 text-gray-500 group-hover:text-green-400 group-hover:translate-x-2 transition-all" />
@@ -213,8 +213,8 @@ export default function LandingPage() {
                       <ServerIcon className="size-7" />
                   </div>
                   <div>
-                      <h3 className="text-xl font-bold text-white mb-1">Adeloop Agent</h3>
-                      <p className="text-base text-gray-400">AI-driven automation & reasoning</p>
+                      <h3 className="text-xl font-bold text-foreground dark:text-white mb-1">Adeloop Agent</h3>
+                      <p className="text-base text-muted-foreground dark:text-gray-400">AI-driven automation & reasoning</p>
                   </div>
                 </div>
                 <ArrowRightIcon className="size-6 text-gray-500 group-hover:text-purple-400 group-hover:translate-x-2 transition-all" />
@@ -244,8 +244,8 @@ export default function LandingPage() {
                           <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 text-green-400 ring-1 ring-white/10 group-hover:bg-green-500/10 transition-colors">
                               {feature.icon}
                           </div>
-                          <h3 className="text-lg font-bold mb-3 text-white">{feature.title}</h3>
-                          <p className="text-gray-400 leading-relaxed text-sm">
+                          <h3 className="text-lg font-bold mb-3 text-foreground dark:text-white">{feature.title}</h3>
+                          <p className="text-muted-foreground dark:text-gray-400 leading-relaxed text-sm">
                               {feature.description}
                           </p>
                       </div>
@@ -260,10 +260,10 @@ export default function LandingPage() {
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1/2 bg-green-500/10 blur-[100px] rounded-full pointer-events-none group-hover:bg-green-500/20 transition-colors duration-700"></div>
               
               <div className="relative z-10 max-w-3xl mx-auto space-y-8">
-                  <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
+                  <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground dark:text-white">
                       Ready to Transform Your Data?
                   </h2>
-                  <p className="text-gray-400 text-xl max-w-2xl mx-auto">
+                  <p className="text-muted-foreground dark:text-gray-400 text-xl max-w-2xl mx-auto">
                       Experience the power of Adeloop's analytics platform. Join thousands of teams making smarter decisions today.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-5 justify-center pt-4">
